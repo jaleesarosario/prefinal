@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/html5rs.css">
+    <link rel="stylesheet" type="text/css" href="css/sitestyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>ME</title>
+</head>
+<body class = "bodystyle">
+    <a class="skip-main metextdiv" href="about.html" >Skip to content</a>
+    <header class = "headernav">
+        <div class = "sticky">
+        <nav>
+            <ul>
+                <li><a href="index.html" class = "topnav">Home</a></li>
+                <li><a href="vv.html" class = "topnav">Videos + Visions</a></li>
+                <li><a href="mm.html" class = "topnav">Motion + Memories</a></li>
+                <li><a href="about.html" class = "current topnav" id = "mecolor">Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+<main>
+<h1 class = "mainheadersection">et Moi </h1>
+<section class = "aboutsection">
+    <div>
+        <video muted autoplay loop>
+            <source src="videos/face_in_flowers.mp4" title="Loop motion photo of Jaleesa Rosario in palm trees">
+        </video>
+    </div>
+    <div class = metextdiv>
+        <p>
+        Jaleesa Rosario is an Icelandic Born Afro Caribbean American modern dancer and mixed media motion artist, who has found a creative passion for<span id="dots">...</span><span id="aboutmore">UX research and HCI agile design with a focus on information architecture, complex systems and computational linguistics.<br>
+        <br>Her research is dedicated to the creative (re)organization of HCI systems and AI training methods, in order to cultivate more inclusive NLP environments.<br>
+        <br>As an Interaction Designer, Jaleesa has leveraged her passion for creative design thinking to support her career in technology, studying at the University of Michigan at the School of Information.<br>
+        <br>Some of her highlights include a feature in Amy Poehlers Smart Girls, live video production for GooglePixel, and the IT development designer for the Brooklyn Museum's Library & Archives... just to name a few.</p>
+        <button onclick="moreMe()" ontouch="moreMe()" id="myBtn">More</button>
+        <h2> Lets Connect</h2>
+        <form class="form-inline" action="/action_page.php">
+            <label for="name">Name:</label>
+            <input type="name" id="name" placeholder="Enter Name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" name="email">
+            <button type="submit">Submit</button>
+        </form>
+        <div class = "mefasection">
+        <a href="http://jaleesarosario.com/resume" class = "fa" target="_blank" title = "Font Awesome File Icon that opens to Jaleesa's Resume Page from another site"><i class="far fa-file"></i></a>
+        <a href="https://www.linkedin.com/in/jaleesa-rosario-turner-b6b58a5a/" class = "fa" target="_blank" title = "Font Awesome Linkedin Icon that opens to Jaleesa's Linkedin Page"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/JaleesaRosario?lang=en" class = "fa" target="_blank" title = "Font Awesome Twitter Icon that opens to Jaleesa's Twitter Page"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/jaleesarosario" class = "fa" target="_blank" title = "Font Awesome Github Icon that opens to Jaleesa's Github Page"><i class="fab fa-github-alt"></i></a>
+        </div>
+    </div>
+    </section>
+</main>
+<footer class = "footernav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vv.html">Visions + Videos</a></li>
+            <li><a href="mm.html">Memories + Motion</a></li>
+            <li><a href="about.html" class = "current">Me</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script>
+function moreMe() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("aboutmore");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "More";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

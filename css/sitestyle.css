@@ -1,0 +1,503 @@
+header{
+    font-family:'Julius Sans One';
+
+}
+body{
+    background-color:#1111111;
+    font-family:serif;
+}
+nav{
+    width: 100vw;
+}
+nav ul li {
+    text-decoration: none;
+    display:inline-block;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+}
+nav li a {
+    width: 100%;
+    color:black;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    justify-content: center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #000;
+    background-color:#fff;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+button{
+    justify-content: center;
+    display:inline-block;
+}
+form{
+    display: inline-block;
+}
+.bodystyle{
+    background-color: #fff;
+    font-family:'Julius Sans One';
+    color: #000000;
+    margin:1%;
+    width: 100%;
+    height: 100%;
+}
+.current{
+    text-transform: uppercase;
+    color:#000000;
+}
+#homecolor{
+    text-decoration:line-through #C900FF;
+}
+#vvcolor{
+    text-decoration:line-through #3B0DBF;
+}
+#mmcolor{
+    text-decoration:line-through #00C5FF;
+}
+#mecolor{
+    text-decoration:line-through #5EBF00;
+}
+.topnav{
+    text-shadow:#000000;
+}
+.topnav:hover{
+    opacity: .5;
+}
+.headernav{
+    display: flex;
+    align-content: center;
+    right: 50px;
+    font-size: 14px;
+}
+.footernav{
+    font-size: 10px;
+    position:static;
+    bottom: 0;
+	text-align: center;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+}
+.mainstyle{
+    margin: 50px;
+    min-height: 100%;
+}
+.mainheadersection{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 200px;
+}
+.lpsection{
+   display: inline-block;
+   box-sizing: content-box;
+   margin-bottom: 100px;
+   margin-right: 50px;
+}
+section.lpsection video{
+   width: 90vw;
+}
+
+section.vvdualitysection video{
+    width:90vw;
+}
+section.vvdualitysection h1{
+    margin-bottom: 50px;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+section.vvsection video{
+    width:90vw;
+}
+section.vvsection h1{
+    margin-bottom: 50px;
+    padding-top: 10%;
+    justify-content: center;
+}
+.vvdiv{
+    box-sizing: content-box;
+    background-color: white;
+    width: 80%;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.vvvideo{
+    height: auto;
+    width: 500px;
+}
+section.mmsection video{
+    width: 90vw;
+    /* margin: 50px; */
+    padding-bottom: 2px;
+}
+.mmdiv{
+    display:grid;
+    box-sizing: content-box;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+.mmmedia{
+    height: auto;
+    width: 90vw;
+    justify-content: center;
+}
+#bw_flowers{
+    padding-top: 0px;
+}
+#tulum{
+    padding-top: 0%;
+}
+section.aboutsection video{
+    width: 90vw;
+    justify-content: center;
+    height: auto;
+}
+#mefont{
+    font-size: 12;
+}
+.metextdiv{
+    box-sizing: content-box;
+    width: 97%;
+    font-size: 1em;
+}
+.metextdiv h2{
+    padding-top: 50px;
+}
+#meheader{
+    margin-bottom: 50px;
+    padding-top: 10%;
+    justify-content: center;
+}
+.mefasection{
+    margin:10px;
+    display:inline-block;
+    box-sizing: content-box;
+    justify-content:flex-end;
+    align-content: center;
+}
+.mefasection div{
+    display:inline-block;
+}
+.fa {
+    box-sizing: content-box;
+    width: 25px;
+    text-decoration: none;
+    margin: 1px;
+    border-radius: 40%;
+    align-content: center;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+#aboutmore{
+    display:none;
+}
+
+@media all and (prefers-reduced-motion: reduce){
+}
+/* Tablet look */
+@media screen and (min-width: 1200px){
+    [class = "aboutsection"]{
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: content-box;
+        justify-content: center;
+        align-items: center;
+    }
+    [class = "aboutsection.video"]{
+            width: 80vw;
+            justify-content: center;
+    }
+    [class = "vvsection.video"]{
+            width: 80vw;
+            justify-content: center;
+    }
+    [class = "vvdualitysection.video"]{
+            width: 80vw;
+            justify-content: center;
+    }
+    [class = "mainheadersection"]{
+        padding-top: 500px;
+    }
+
+    .vvsection, .aboutsection, .lpsection, .vvdualitysection{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        box-sizing: content-box;
+        border: 5px;
+        padding: 5px;
+        margin-top: :100px;
+        margin-bottom: 100px;
+    }
+    nav{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display:inline;
+        box-sizing: content-box;
+        text-decoration:none;
+        align-content: center;
+        justify-content:center;
+        width: 100%;
+        background-color: #fff;
+        color: black;
+    }
+    nav li a {
+        width: 100%;
+        color:black;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+    }
+    button{
+        justify-content: center;
+        display:inline-block;
+    }
+    form{
+        display: inline-block;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    /* Put yoru 50vw stuff here */
+    section.aboutsection video{
+        width: 50vw;
+        justify-content: center;
+        height: 80vh;
+        padding-bottom: 30px;
+    }
+
+ .lpsection{
+    display: inline-flex;
+    box-sizing: content-box;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+section.lpsection video{
+    width: 45vw;
+}
+.vvsection{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    box-sizing: content-box;
+    border: 5px;
+    padding: 5px;
+    margin-top: :100px;
+    margin-bottom: 100px;
+}
+.vvdualitysection{
+    display: grid;
+    grid-template-columns: 50vw 45vw;
+    box-sizing: content-box;
+    border: 5px;
+    padding: 5px;
+    margin-top: :100px;
+    margin-bottom: 100px;
+}
+.aboutsection{
+    display: grid;
+    grid-template-columns: 50vw 45vw;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+}
+section.aboutsection video{
+    width: 50vw;
+    justify-content: center;
+    height: 80vh;
+    padding-bottom: 30px;
+}
+.mmdiv{
+    display:grid;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1em;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px #ccc;
+    overflow: hidden;
+}
+section.mmsection video{
+    width: 100%;
+    justify-content: center;
+}
+.mmmedia{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+.footernav{
+    font-size: 10px;
+    justify-content: center;
+}
+
+/* Larger Screen */
+@media screen and (min-width: 1200px){
+    [class = "aboutsection"]{
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: content-box;
+        justify-content: center;
+        align-items: center;
+    }
+    [class = "aboutsection.video"]{
+            width: 80vw;
+            justify-content: center;
+    }
+    button{
+        justify-content: center;
+        display:inline-block;
+    }
+    form{
+        display: inline-block;
+    }
+    .vvsection, .aboutsection, .lpsection, .vvdualitysection{
+        display: grid;
+        grid-template-columns: 50vw 50vw 50vw;
+        box-sizing: content-box;
+        border: 5px;
+        padding: 5px;
+        margin-top: :100px;
+        margin-bottom: 100px;
+    }
+
+    section.aboutsection video{
+        width: 50vw;
+        justify-content: center;
+        height: 80vh;
+        padding-bottom: 30px;
+    }
+    .mainheadersection{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 10px;
+        padding-top: 50px;
+    }
+ .lpsection{
+    display: inline-flex;
+    box-sizing: content-box;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+section.lpsection video{
+    width: 45vw;
+}
+.vvsection{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    box-sizing: content-box;
+    border: 5px;
+    padding: 5px;
+    margin-top: :100px;
+    margin-bottom: 100px;
+}
+section.vvsection video{
+    width: 45vw;
+}
+.vvdualitysection{
+    display: grid;
+    grid-template-columns: 50vw 45vw;
+    box-sizing: content-box;
+    border: 5px;
+    padding: 5px;
+    margin-top: :100px;
+    margin-bottom: 100px;
+}
+.aboutsection{
+    display: inline-flex;
+    box-sizing: content-box;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+.metextdiv{
+    box-sizing: content-box;
+    width: 80%;
+    font-size: 1em;
+}
+section.aboutsection video{
+    width: 50vw;
+    justify-content: center;
+    height: 80vh;
+    padding-bottom: 10px;
+}
+.mmdiv{
+    display:grid;
+    box-sizing: content-box;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+section.mmsection video{
+    width: 30vw;
+    justify-content: center;
+}
+.mmmedia{
+    height: auto;
+    width: 30vw;
+    justify-content: center;
+}
+.footernav{
+    font-size: 10px;
+    justify-content: center;
+}

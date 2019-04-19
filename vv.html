@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/html5rs.css">
+    <link rel="stylesheet" type="text/css" href="css/sitestyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>VV</title>
+</head>
+<body class = "bodystyle">
+    <a class="skip-main current topnav" href="vv.html">Skip to content</a>
+    <header class = "headernav">
+        <div class = "sticky table">
+        <nav>
+            <ul>
+                <li><a href="index.html" class = "topnav">Home</a></li>
+                <li><a href="vv.html" class = "current topnav" id = "vvcolor">Videos + Vision</a></li>
+                <li><a href="mm.html" class = "topnav">Motion + Memories</a></li>
+                <li><a href="about.html" class = "topnav">Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+<main>
+    <section class = "mainheadersection">
+        <h1> Visual attempts to capture the feels of lived experiences </h1>
+    </section>
+
+    <section class = "vvsection">
+        <div>
+            <video controls>
+                <source src="videos/46sec_beachclip.mp4" class = "vvvideo" title ="Girl Swinging at the beach">
+            </video>
+        </div>
+        <div class = "vvdiv">
+            <h2> "Sometimes When I Dream" </h2>
+            <p>Her and I were strangers who happened to share an abusive ex, so as I went looking in the dark for answers -  she appeared like a dream. As a way to heal we went to the beach to bond by filming two seperate independent projects, now sometimes when I dream I can still feel the sun burning into me.
+            <p>
+            This video is a snipet from a longer, short experiential film shot, directed and produced by JR. 2017 </p>
+        </div>
+    </section>
+    <section class = "vvsection">
+        <div>
+            <video controls>
+                <source src="videos/Purpleflowers1.mp4" class = "lpvideo" title ="Purples Flowers 1">
+             </video>
+        </div>
+        <div>
+            <video controls>
+                <source src="videos/purpleflower2.mp4" class = "lpvideo" title="Purple Flowers 2">
+            </video>
+        </div>
+        <div class = "vvdiv">
+        <h2> "Duality" </h2>
+        <p>Like life, everything can and does exist on their own to a certain extent. So I would like you to play each video one at a time. </p>
+        <p>However life is not that simple - It's a series of complex layers! Play them at the same time and experience how layers truly create our reality.</p></div>
+        <div class = "vvdiv">
+        <p>As I continously, strive to re-imagine lived experiences - there is a need to saturate the seconds.</p><p>This is a study on the isolation of sounds with the same or similar media.</p>
+    </div>
+    </section>
+</main>
+<footer class = "footernav">
+<div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vv.html" class = "current">Visions + Videos</a></li>
+            <li><a href="mm.html">Memories + Motion</a></li>
+            <li><a href="about.html">Me</a></li>
+        </ul>
+    </nav>
+</div>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
